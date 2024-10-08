@@ -1,20 +1,20 @@
 # N26 App 分流规则
 
 # N26 主域名和 API 域名
-DOMAIN-SUFFIX,n26.com,n26
-DOMAIN-SUFFIX,api.tech26.de,n26
-DOMAIN-SUFFIX,tech26.de,n26
+DOMAIN-SUFFIX,n26.com,N26
+DOMAIN-SUFFIX,api.tech26.de,N26
+DOMAIN-SUFFIX,tech26.de,N26
 
 # N26 CDN及资源域名
-DOMAIN-SUFFIX,cdn.n26.com,n26
-DOMAIN-SUFFIX,static.n26.io,n26
-DOMAIN-SUFFIX,cdn.number26.de,n26
+DOMAIN-SUFFIX,cdn.n26.com,N26
+DOMAIN-SUFFIX,static.n26.io,N26
+DOMAIN-SUFFIX,cdn.number26.de,N26
 
 # N26 安全和身份验证服务
-DOMAIN-SUFFIX,n26.auth0.com,n26
+DOMAIN-SUFFIX,n26.auth0.com,N26
 
 # 其他相关服务
-DOMAIN-SUFFIX,segment.io,n26
-DOMAIN-SUFFIX,amazonaws.com,n26
-DOMAIN-SUFFIX,pushwoosh.com,n26
-DOMAIN-SUFFIX,app.adjust.com,n26
+DOMAIN-SUFFIX,segment.io,N26
+DOMAIN-SUFFIX,amazonaws.com,N26
+DOMAIN-SUFFIX,pushwoosh.com,N26
+DOMAIN-SUFFIX,app.adjust.com,N26
