@@ -1,0 +1,20 @@
+# N26 App 分流规则
+
+# N26 主域名和 API 域名
+HOST-SUFFIX,n26.com,n26
+HOST-SUFFIX,api.tech26.de,n26
+HOST-SUFFIX,tech26.de,n26
+
+# N26 CDN及资源域名
+HOST-SUFFIX,cdn.n26.com,n26
+HOST-SUFFIX,static.n26.io,n26
+HOST-SUFFIX,cdn.number26.de,n26
+
+# N26 安全和身份验证服务
+HOST-SUFFIX,n26.auth0.com,n26
+
+# 其他相关服务
+HOST-SUFFIX,segment.io,n26
+HOST-SUFFIX,amazonaws.com,n26
+HOST-SUFFIX,pushwoosh.com,n26
+HOST-SUFFIX,app.adjust.com,n26
