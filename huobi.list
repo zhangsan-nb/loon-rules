@@ -1,0 +1,18 @@
+# 火币App分流规则
+
+# 主域名
+DOMAIN-SUFFIX,huobi.com
+DOMAIN-SUFFIX,huobigroup.com
+DOMAIN-SUFFIX,hbdm.com
+DOMAIN-SUFFIX,htx.com
+
+# API相关
+DOMAIN-SUFFIX,huobiapi.com
+DOMAIN-SUFFIX,cdn-aliyun.com
+DOMAIN-SUFFIX,cdn.huobiapi.com
+
+# 其他相关域名
+DOMAIN-SUFFIX,hbg.com
+DOMAIN-SUFFIX,otc.huobi.com
+DOMAIN-SUFFIX,static.huobipro.com
+DOMAIN-SUFFIX,cdn.huobi.pro
