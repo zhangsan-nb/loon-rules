@@ -1,0 +1,7 @@
+# Coinbase 分流规则
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coinbase.pro
+DOMAIN-SUFFIX,coinbase-wallet.prod
+DOMAIN-SUFFIX,coinbasecustody.com
+DOMAIN-SUFFIX,coinbaseprime.com
+DOMAIN-SUFFIX,coinbase.cloud
