@@ -9,4 +9,4 @@ DOMAIN-SUFFIX,trading212api.com
 # 分析及跟踪
 DOMAIN-SUFFIX,analytics.trading212.com
 DOMAIN-SUFFIX,tracking.trading212.com
-DOMAIN-SUFFIX,trading212equities.s3.eu-central-1.amazonaws.com
+DOMAIN,trading212equities.s3.eu-central-1.amazonaws.com
