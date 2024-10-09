@@ -15,6 +15,5 @@ DOMAIN-SUFFIX,auth0.com
 
 # 其他相关服务
 DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,pushwoosh.com
 DOMAIN-SUFFIX,app.adjust.com
