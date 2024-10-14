@@ -6,4 +6,11 @@
 # TOTAL: 1
 DOMAIN,lens.l.google.com
 DOMAIN,stun.l.google.com
-DOMAIN,voice.telephony.goog	
+DOMAIN,voice.telephony.goog
+# Google Voice 相关域名
+DOMAIN-SUFFIX,voice.google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,ggpht.com
+
