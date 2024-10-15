@@ -1,4 +1,5 @@
 # N26 App 分流规则
+DOMAIN,api.usercentrics.eu
 
 # N26 主域名和 API 域名
 DOMAIN-SUFFIX,n26.com
@@ -17,4 +18,4 @@ DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,pushwoosh.com
 DOMAIN-SUFFIX,app.adjust.com
-DOMAIN,api.usercentrics.eu
+
