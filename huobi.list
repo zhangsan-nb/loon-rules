@@ -1,10 +1,13 @@
 # 火币App分流规则
+DOMAIN,huobi.com.bo
+DOMAIN,huobicfg.s3.ap-northeast-1.amazonaws.com
 
 # 主域名
 DOMAIN-SUFFIX,huobi.com
 DOMAIN-SUFFIX,huobigroup.com
 DOMAIN-SUFFIX,hbdm.com
 DOMAIN-SUFFIX,htx.com
+
 
 # API相关
 DOMAIN-SUFFIX,huobiapi.com
