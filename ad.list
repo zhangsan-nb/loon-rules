@@ -4,3 +4,25 @@
 # 360智慧生活去广告
 DOMAIN,ad.iot.360.cn
 
+# 萤石云视频去广告
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,byted.org
+DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,byteactivity
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidu.cn
+DOMAIN-SUFFIX,bugly.qq.com
+DOMAIN-SUFFIX,e.qq.com
+DOMAIN-SUFFIX,ugdtimg.com
+DOMAIN-SUFFIX,gdtimg.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,umeng.com
