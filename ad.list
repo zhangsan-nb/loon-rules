@@ -1,0 +1,7 @@
+#各种去广告
+
+
+#360智慧生活去广告
+rules:
+  - DOMAIN,ad.iot.360.cn,REJECT
+  - SCRIPT,https://app.home.360.cn/v1/config/custom_config,REJECT
