@@ -1,0 +1,43 @@
+# NAME: Claude
+# AUTHOR: candy-lp
+# UPDATED: 2025-09-18
+# DOMAIN: 6
+# DOMAIN-SUFFIX: 18
+# TOTAL: 24
+
+# === 核心 API 与站点 ===
+DOMAIN,api.anthropic.com
+DOMAIN,claude.ai
+DOMAIN,claudeusercontent.com
+DOMAIN,claudeplatform.com
+DOMAIN,claudefiles.com
+DOMAIN,claudeusercontent.ai
+
+# === 域名后缀兜底 ===
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# === 第三方依赖（认证 / 安全验证）===
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,okta.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+
+# === 即时通信与客服 ===
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+
+# === 分析与埋点 ===
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,segment.io
+
+# === CDN 与性能依赖 ===
+DOMAIN-SUFFIX,cloudflare.net
+DOMAIN-SUFFIX,cloudflareinsights.com
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+
+# === 证书/信任链 ===
+DOMAIN-SUFFIX,identrust.com
