@@ -1,19 +1,33 @@
-# NAME: Binance
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:17:44
-# DOMAIN-SUFFIX: 12
-# TOTAL: 12
-DOMAIN-SUFFIX,appsflayer.com
-DOMAIN-SUFFIX,binance.cloud
+# NAME: Binance (core+safe)
+# AUTHOR: revised by ChatGPT for Candy Lp
+# UPDATED: 2025-09-29
+# DESC: Core domains only. Avoids over-broad trackers to reduce false matches.
+
+# ---------- CORE (RECOMMENDED) ----------
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binancecnt.com
-DOMAIN-SUFFIX,binancefuture.com
-DOMAIN-SUFFIX,bnappzh.co
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bnbzh.ac
-DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,saasexch.cc
-DOMAIN-SUFFIX,saasexch.com
 DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,binancezh.com
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,saasexch.cc
+DOMAIN-SUFFIX,binance.vision
+
+# ---------- OPTIONAL (ENABLE IF NEEDED) ----------
+# 美国站（仅需要访问 Binance.US 时开启）
+# DOMAIN-SUFFIX,binanceus.com
+
+# 可能出现的跳转/历史域（极少见）
+# DOMAIN-SUFFIX,binance.co
+
+# BNB Chain / 公益 / 组织相关（非交易必需）
+# DOMAIN-SUFFIX,binance.org
+
+# 内部追踪/埋点域（偶见；不必然需要）
+# DOMAIN-SUFFIX,bntrace.com
+
+# 基本无实际流量价值或已废弃的域，保持关闭
+# DOMAIN-SUFFIX,binancefuture.com
