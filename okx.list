@@ -1,10 +1,8 @@
-# NAME: OKX
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-01-08 16:03:00
-# DOMAIN-SUFFIX: 4
-# TOTAL: 4
+# NAME: OKX (optimized)
+# AUTHOR: blackmatrix7 (optimized by ChatGPT)
+# UPDATED: 2025-09-29
+# TOTAL: 3
+
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,oklink.com
 DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
