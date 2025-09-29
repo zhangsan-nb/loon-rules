@@ -1,33 +1,27 @@
-# NAME: Binance (core+safe)
-# AUTHOR: revised by ChatGPT for Candy Lp
+# NAME: Binance (enhanced)
 # UPDATED: 2025-09-29
-# DESC: Core domains only. Avoids over-broad trackers to reduce false matches.
 
-# ---------- CORE (RECOMMENDED) ----------
+# ---- Core Trading & API ----
 DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,binance.info
-DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,binancezh.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,binance.vision
 DOMAIN-SUFFIX,bnbstatic.com
+
+# ---- Wallet ----
+DOMAIN-SUFFIX,wallet.binance.com
+
+# ---- SaaS & login ----
 DOMAIN-SUFFIX,saasexch.com
 DOMAIN-SUFFIX,saasexch.cc
-DOMAIN-SUFFIX,binance.vision
 
-# ---------- OPTIONAL (ENABLE IF NEEDED) ----------
-# 美国站（仅需要访问 Binance.US 时开启）
+# ---- Optional / Regional ----
 # DOMAIN-SUFFIX,binanceus.com
-
-# 可能出现的跳转/历史域（极少见）
 # DOMAIN-SUFFIX,binance.co
-
-# BNB Chain / 公益 / 组织相关（非交易必需）
 # DOMAIN-SUFFIX,binance.org
-
-# 内部追踪/埋点域（偶见；不必然需要）
 # DOMAIN-SUFFIX,bntrace.com
-
-# 基本无实际流量价值或已废弃的域，保持关闭
 # DOMAIN-SUFFIX,binancefuture.com
