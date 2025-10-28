@@ -1,0 +1,55 @@
+# NAME: Bitget (enhanced)
+# AUTHOR: ChatGPT (modeled after Binance enhanced rules)
+# UPDATED: 2025-09-29
+# TOTAL: Core + Wallet + SaaS + Optional
+
+# ==========================
+#  Bitget Core Trading & API
+# ==========================
+DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bitgetapi.com
+DOMAIN-SUFFIX,bitget.pro
+DOMAIN-SUFFIX,bitgetcloud.com
+DOMAIN-SUFFIX,bitgetlimited.com
+DOMAIN-SUFFIX,bgstatic.com
+DOMAIN-SUFFIX,bgcdn.com
+DOMAIN-SUFFIX,bitgetimg.com
+
+# ==========================
+#  Bitget Wallet (BitKeep)
+# ==========================
+DOMAIN-SUFFIX,bitgetwallet.com
+DOMAIN-SUFFIX,bitkeep.com
+DOMAIN-SUFFIX,bitkeepapi.com
+DOMAIN-SUFFIX,bitkeep.vip
+DOMAIN-SUFFIX,bitkeep.org
+DOMAIN-SUFFIX,bitkeep.top
+DOMAIN-SUFFIX,bitkeep.app
+DOMAIN-SUFFIX,bitkeepapi.net
+
+# ==========================
+#  SaaS / Login / SSO
+# ==========================
+DOMAIN-SUFFIX,saasbitget.com
+DOMAIN-SUFFIX,bitgetex.com
+
+# ==========================
+#  Optional / Regional Domains
+#  (Uncomment if needed)
+# ==========================
+# DOMAIN-SUFFIX,bitgetglobal.com
+# DOMAIN-SUFFIX,bitgethk.com
+# DOMAIN-SUFFIX,bitgetjapan.com
+# DOMAIN-SUFFIX,bitgetsg.com
+# DOMAIN-SUFFIX,bgtrace.com
+# DOMAIN-SUFFIX,bitgetfuture.com
+# DOMAIN-SUFFIX,bgexchange.com
+
+# ==========================
+#  Final Routing
+# ==========================
+# 可选：根据策略组路由（示例）
+# 使用示例：
+# RULE-SET,Bitget(enhanced),PROXY
+# 或：
+# DOMAIN-SUFFIX,bitget.com,PROXY
