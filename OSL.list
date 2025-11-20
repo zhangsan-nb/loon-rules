@@ -1,0 +1,16 @@
+# NAME: OSL (enhanced)
+# UPDATED: 2025-11-20
+
+# ---- Core Trading & Web ----
+DOMAIN-SUFFIX,osl.com
+
+# ---- Trading / Login (HK / JP) ----
+DOMAIN-SUFFIX,trade-hk.osl.com
+DOMAIN-SUFFIX,trade-jp-api.osl.com
+DOMAIN-SUFFIX,trade-jp-wsapi.osl.com
+DOMAIN-SUFFIX,docs.osl.com
+
+# ---- Payments (OSL Pay) ----
+DOMAIN-SUFFIX,osl-pay.com
+DOMAIN-SUFFIX,pay.osl.com
+DOMAIN-SUFFIX,docs.pay.osl.com
