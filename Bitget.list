@@ -1,55 +1,28 @@
-# NAME: Bitget (enhanced)
-# AUTHOR: ChatGPT (modeled after Binance enhanced rules)
-# UPDATED: 2025-09-29
-# TOTAL: Core + Wallet + SaaS + Optional
+# NAME: Bitget (Trader Edition)
+# UPDATED: 2025-12-18
+# 策略：推荐走 新加坡(SG) 或 日本(JP) 节点 (Bitget 亚太总部重心)
 
-# ==========================
-#  Bitget Core Trading & API
-# ==========================
-DOMAIN-SUFFIX,bitget.com
-DOMAIN-SUFFIX,bitgetapi.com
-DOMAIN-SUFFIX,bitget.pro
-DOMAIN-SUFFIX,bitgetcloud.com
-DOMAIN-SUFFIX,bitgetlimited.com
-DOMAIN-SUFFIX,bgstatic.com
-DOMAIN-SUFFIX,bgcdn.com
-DOMAIN-SUFFIX,bitgetimg.com
+# ---- Core Trading & API (核心交易) ----
+DOMAIN-SUFFIX,bitget.com       # 涵盖了 api, www, futures 等所有核心
+DOMAIN-SUFFIX,bitgetapi.com    # 专门的 API 域名
+DOMAIN-SUFFIX,bitget.site      # [新增] 官方常用的备用/活动域名
 
-# ==========================
-#  Bitget Wallet (BitKeep)
-# ==========================
-DOMAIN-SUFFIX,bitgetwallet.com
-DOMAIN-SUFFIX,bitkeep.com
-DOMAIN-SUFFIX,bitkeepapi.com
-DOMAIN-SUFFIX,bitkeep.vip
-DOMAIN-SUFFIX,bitkeep.org
-DOMAIN-SUFFIX,bitkeep.top
-DOMAIN-SUFFIX,bitkeep.app
-DOMAIN-SUFFIX,bitkeepapi.net
+# ---- Infrastructure & CDN (基建) ----
+DOMAIN-SUFFIX,bgstatic.com     # 极其重要，K线、UI图标都在这
+DOMAIN-SUFFIX,bitgetimg.com    # 图片资源
+DOMAIN-SUFFIX,bitgetcdn.com    # [新增] 部分区域的加速域名
 
-# ==========================
-#  SaaS / Login / SSO
-# ==========================
-DOMAIN-SUFFIX,saasbitget.com
-DOMAIN-SUFFIX,bitgetex.com
+# ---- Bitget Wallet (Web3 钱包 - 仅保留正规军) ----
+DOMAIN-SUFFIX,bitgetwallet.com # 新品牌主域
+DOMAIN-SUFFIX,bitkeep.com      # 旧品牌重定向保留
+DOMAIN-SUFFIX,bwb.site         # [新增] Bitget Wallet Token 相关
 
-# ==========================
-#  Optional / Regional Domains
-#  (Uncomment if needed)
-# ==========================
-# DOMAIN-SUFFIX,bitgetglobal.com
-# DOMAIN-SUFFIX,bitgethk.com
-# DOMAIN-SUFFIX,bitgetjapan.com
-# DOMAIN-SUFFIX,bitgetsg.com
-# DOMAIN-SUFFIX,bgtrace.com
-# DOMAIN-SUFFIX,bitgetfuture.com
-# DOMAIN-SUFFIX,bgexchange.com
+# ---- Support & Services (客服与验证) ----
+DOMAIN-SUFFIX,bitget.zendesk.com # 客服系统
+DOMAIN-SUFFIX,sumsub.com       # [新增] Bitget 的 KYC 身份验证供应商
 
-# ==========================
-#  Final Routing
-# ==========================
-# 可选：根据策略组路由（示例）
-# 使用示例：
-# RULE-SET,Bitget(enhanced),PROXY
-# 或：
-# DOMAIN-SUFFIX,bitget.com,PROXY
+# ---- 必须删除的垃圾与地雷 ----
+# bitget.pro (高仿多，删)
+# bitkeep.vip / .top / .org (钓鱼高危区，删)
+# saasbitget.com (臆造域名，删)
+# bitgetcloud.com (非核心，除非你做企业服务，否则删)
