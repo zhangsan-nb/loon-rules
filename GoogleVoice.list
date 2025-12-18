@@ -1,12 +1,21 @@
+# NAME: Google Voice (Pure)
+# UPDATED: 2025-12-18
+# 策略：建议走美国节点 (US IP)，支持 UDP 转发是必须的
 
-# Google Voice 相关域名
-DOMAIN,voice.telephony.goog
-DOMAIN,lens.l.google.com
-
+# ---- Core Service (核心信令与网页) ----
 DOMAIN-SUFFIX,voice.google.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,stun.l.google.com
+DOMAIN,voice.telephony.goog     # 关键：通话建立时的信令域名
 
+# ---- Legacy & Backend (旧架构兼容) ----
+# 虽然 Hangouts 死了，但 GV 后端仍共用部分架构，建议加上防漏
+DOMAIN-SUFFIX,hangouts.google.com
+
+# ---- STUN/ICE (语音流穿透) ----
+# 这是一个子集，不要写 stun.l.google.com (太窄) 或 google.com (太宽)
+DOMAIN-KEYWORD,google-voice
+
+# ---- 必须删除的累赘 ----
+# googleapis.com (让它走通用Google规则)
+# gstatic.com (同上，别拖累网速)
+# googleusercontent.com (同上)
+# ggpht.com (这是Google Photos的图床，删)
