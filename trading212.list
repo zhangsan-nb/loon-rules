@@ -1,12 +1,17 @@
-# Trading 212 App 分流规则
+# NAME: Trading 212 (Stable)
+# UPDATED: 2025-12-18
+# 策略：必须走 英国(UK) 或 欧盟(EU) 原生 IP，严禁频繁跳动
 
-# 主域名和API域名
-DOMAIN-SUFFIX,trading212.com
-DOMAIN-SUFFIX,trading212.co.uk
-DOMAIN-SUFFIX,trading212api.com
+# ---- Core & API (核心业务) ----
+DOMAIN-SUFFIX,trading212.com       # 涵盖了 live, demo, analytics 等所有子域
+DOMAIN-SUFFIX,trading212.co.uk     # 英国区核心
+DOMAIN-SUFFIX,trading212api.com    # 数据接口
 
+# ---- Infrastructure (部分图表库/静态资源) ----
+DOMAIN-SUFFIX,chartiq.com          # T212 使用的图表库，建议加上
+DOMAIN-SUFFIX,trading212.io        # [新增] 偶尔用于后端服务或短链
 
-# 分析及跟踪
-DOMAIN-SUFFIX,analytics.trading212.com
-DOMAIN-SUFFIX,tracking.trading212.com
-DOMAIN,trading212equities.s3.eu-central-1.amazonaws.com
+# ---- 必须删除的垃圾 ----
+# trading212equities.s3.eu-central-1.amazonaws.com (极度脆弱，删)
+# analytics.trading212.com (已被主域覆盖，删)
+# tracking.trading212.com (已被主域覆盖，删)
