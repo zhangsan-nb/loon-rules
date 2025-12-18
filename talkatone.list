@@ -1,12 +1,17 @@
-DOMAIN-SUFFIX,talkatone.com
+# NAME: Talkatone (Pure)
+# UPDATED: 2025-12-18
+# 策略：必须走美国原生住宅 IP (US Residential)
+
+# ---- Core Service (核心服务) ----
+DOMAIN-SUFFIX,talkatone.com      # 涵盖了 voip.talkatone.com 等所有子域名
+DOMAIN-SUFFIX,tktn.be            # 短链接/验证
+DOMAIN-SUFFIX,tktn.at            # [新增] 另一种短链格式
+
+# ---- Infrastructure (基建与推送) ----
+# Talkatone 依赖 Google GMS 推送，请确保你已经有 Google 相关的规则集
+# 如果你的节点对 appspot 极其不友好，需单独指定：
 DOMAIN-SUFFIX,talkatone.appspot.com
-DOMAIN-SUFFIX,voip.talkatone.com
-DOMAIN-SUFFIX,voip-app.talkatone.com
-DOMAIN-SUFFIX,mobilefuse.com
-DOMAIN-SUFFIX,smaato.net
-DOMAIN-SUFFIX,criteo.com
-DOMAIN-SUFFIX,inner-active.mobi
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,pubmatic.com
-DOMAIN-SUFFIX,inmobi.com
-DOMAIN-SUFFIX,tktn.be
+
+# ---- UDP/VoIP (可选显式声明) ----
+# 如果你的代理软件支持对特定域名强制 UDP 转发，保留这个有助于通话质量
+# DOMAIN-SUFFIX,voip.talkatone.com
