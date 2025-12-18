@@ -1,27 +1,37 @@
-# NAME: Binance (enhanced)
-# UPDATED: 2025-09-29
+# NAME: Binance (Pro)
+# UPDATED: 2025-12-18
+# 策略建议：务必走“代理” (Proxy)，不要走“自动选择”或“直连”
 
-# ---- Core Trading & API ----
+# ---- Core Trading & Infrastructure (核心交易与基建) ----
 DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.net        # [新增] 极其重要，后端及内部节点通信
+DOMAIN-SUFFIX,binanceapi.com     # API 接口
+DOMAIN-SUFFIX,binance.me         # 常用短链接/重定向
+DOMAIN-SUFFIX,binance.im         # [新增] 部分即时通讯/客服服务
+DOMAIN-SUFFIX,bnbstatic.com      # 静态资源(图片/CSS/JS)，加载K线必备
+
+# ---- Regional & Mirrors (地区与镜像 - 包含老旧域名以防万一) ----
 DOMAIN-SUFFIX,binancezh.com
-DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binancezh.cc       # [新增] 常见中文镜像后缀
 DOMAIN-SUFFIX,binancecnt.com
-DOMAIN-SUFFIX,binance.vision
-DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.charity    # [新增] 偶尔会有某些验证或活动页挂在这里
+DOMAIN-SUFFIX,binance.cloud      # 云服务相关
+DOMAIN-SUFFIX,binance.vision     # 学院/教育
 
-# ---- Wallet ----
+# ---- Wallet & Auth (钱包与鉴权) ----
 DOMAIN-SUFFIX,wallet.binance.com
+DOMAIN-SUFFIX,saasexch.com       # 关键：App登录鉴权常走此域名
+DOMAIN-SUFFIX,saasexch.cc        # 关键：同上
 
-# ---- SaaS & login ----
-DOMAIN-SUFFIX,saasexch.com
-DOMAIN-SUFFIX,saasexch.cc
+# ---- Update & Download (更新服务) ----
+DOMAIN-SUFFIX,binance.download   # [新增] App内更新下载，防止下载失败
+DOMAIN-SUFFIX,binance.co         # 这里的官网短链有时用于下载跳转
 
-# ---- Optional / Regional ----
-# DOMAIN-SUFFIX,binanceus.com
-# DOMAIN-SUFFIX,binance.co
-# DOMAIN-SUFFIX,binance.org
-# DOMAIN-SUFFIX,bntrace.com
-# DOMAIN-SUFFIX,binancefuture.com
+# ---- Explicit Stream (显式流媒体 - 提升优先级) ----
+# 虽然包含在 binance.com 中，但单独列出有助于排查和分流
+DOMAIN-SUFFIX,stream.binance.com
+
+# ---- Optional / Deprecated (可选/旧域名) ----
+# DOMAIN-SUFFIX,binance.org      # 主要是BSC链上相关，通常不需要代理，除非看浏览器
+# DOMAIN-SUFFIX,binancefuture.com # 极老的合约接口，现在基本整合进主域，可留作备用
