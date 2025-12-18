@@ -1,43 +1,21 @@
-# NAME: Claude
-# AUTHOR: candy-lp
-# UPDATED: 2025-09-18
-# DOMAIN: 6
-# DOMAIN-SUFFIX: 18
-# TOTAL: 24
+# NAME: Claude (Pure)
+# UPDATED: 2025-12-18
+# 策略：必须走美国/英国/新加坡的原生节点 (住宅IP最佳)，严禁频繁变动
 
-# === 核心 API 与站点 ===
-DOMAIN,api.anthropic.com
-DOMAIN,claude.ai
-DOMAIN,claudeusercontent.com
-DOMAIN,claudeplatform.com
-DOMAIN,claudefiles.com
-DOMAIN,claudeusercontent.ai
+# ---- Core Service (核心服务) ----
+DOMAIN-SUFFIX,anthropic.com    # 涵盖了 api, console, www 等
+DOMAIN-SUFFIX,claude.ai        # 网页版主域
+DOMAIN-SUFFIX,claudeusercontent.com # 附件、Artifacts 预览
+DOMAIN-SUFFIX,claude.user.content # [新增] 部分新版资源域名
 
-# === 域名后缀兜底 ===
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
+# ---- Infrastructure (部分必要的基建) ----
+# 仅保留 Claude 强依赖且较少误伤的
+DOMAIN-SUFFIX,usefathom.com    # Claude 网页版常用的无隐私分析（可选）
 
-# === 第三方依赖（认证 / 安全验证）===
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,okta.com
-DOMAIN-SUFFIX,arkoselabs.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-
-# === 即时通信与客服 ===
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-
-# === 分析与埋点 ===
-DOMAIN-SUFFIX,datadoghq.com
-DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,segment.io
-
-# === CDN 与性能依赖 ===
-DOMAIN-SUFFIX,cloudflare.net
-DOMAIN-SUFFIX,cloudflareinsights.com
-DOMAIN-SUFFIX,livekit.cloud
-DOMAIN-SUFFIX,chatgpt.livekit.cloud
-
-# === 证书/信任链 ===
-DOMAIN-SUFFIX,identrust.com
+# ---- 必须删除的垃圾 ----
+# cloudflare.net (绝对不能加，这是自杀)
+# auth0.com / okta.com (通用鉴权，别劫持)
+# intercom.io (通用客服，别劫持)
+# segment.io / datadoghq.com (通用埋点，浪费流量)
+# chatgpt.livekit.cloud (这是OpenAI的，走错片场了)
+# arkoselabs.com (虽然 Claude 用它做验证，但建议走全局规则，不要强制绑定 Claude 节点，否则会误伤 Twitter 等其他网站)
