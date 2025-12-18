@@ -1,23 +1,33 @@
-# 火币App分流规则
-DOMAIN,huobi.com.bo
-DOMAIN,huobicfg.s3.ap-northeast-1.amazonaws.com
-DOMAIN,huobicfg.s3.amazonaws.com
+# NAME: HTX (Huobi Pro)
+# UPDATED: 2025-12-18
+# 策略：推荐走 香港(HK) 或 新加坡(SG) 节点，延迟最低
 
-# 主域名
-DOMAIN-SUFFIX,huobi.com
-DOMAIN-SUFFIX,huobigroup.com
-DOMAIN-SUFFIX,hbdm.com
+# ---- Core Brand (新品牌 HTX) ----
 DOMAIN-SUFFIX,htx.com
+DOMAIN-SUFFIX,htx.co           # 短链/跳转
+DOMAIN-SUFFIX,htx.com.co       # 客服系统常跳这个
+DOMAIN-SUFFIX,htxgroup.com     # 集团业务
 
+# ---- Legacy Core (旧品牌火币 - 后端仍强依赖) ----
+DOMAIN-SUFFIX,huobi.com
+DOMAIN-SUFFIX,huobi.me         # 常用备用/活动域名
+DOMAIN-SUFFIX,huobi.pro        # 极老的域名，但 API 偶有残留
+DOMAIN-SUFFIX,huobigroup.com
 
-# API相关
-DOMAIN-SUFFIX,huobiapi.com
-DOMAIN-SUFFIX,cdn-aliyun.com
-DOMAIN-SUFFIX,cdn.huobiapi.com
+# ---- Futures & Derivatives (合约交易核心) ----
+DOMAIN-SUFFIX,hbdm.com         # 玩合约必加，K线和下单全走这里
+DOMAIN-SUFFIX,hbdm.vn          # 越南域名，但在亚太区 CDN 调度中很常见
 
-# 其他相关域名
-DOMAIN-SUFFIX,hbg.com
-DOMAIN-SUFFIX,otc.huobi.com
-DOMAIN-SUFFIX,static.huobipro.com
-DOMAIN-SUFFIX,cdn.huobi.pro
-DOMAIN-KEYWORD,htx
+# ---- Infrastructure & Assets (基建) ----
+DOMAIN-SUFFIX,huobiapi.com     # API 接口
+DOMAIN-SUFFIX,hbfile.net       # [新增] 极其重要！图片、公告、Banner都存在这
+DOMAIN-SUFFIX,hbfiles.com      # [新增] 同上，静态资源库
+
+# ---- Chat & Support (客服) ----
+DOMAIN-SUFFIX,zendesk.com      # HTX 客服系统严重依赖 Zendesk，建议加白或走代理
+DOMAIN-SUFFIX,udesk.cn         # 有时会回落到这个客服系统
+
+# ---- 必须删除的毒瘤 ----
+# cdn-aliyun.com (绝对要删，这是在自杀)
+# DOMAIN-KEYWORD,htx (太宽泛，容易误伤，删)
+# huobicfg.s3... (删)
