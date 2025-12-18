@@ -1,47 +1,25 @@
-# NAME: OKX (Full Optimized)
-# AUTHOR: blackmatrix7 + ChatGPT optimized
-# UPDATED: 2025-10-26
-# TOTAL: 18
+# NAME: OKX (Trader Edition)
+# UPDATED: 2025-12-18
+# 策略：纯净、低延迟、拒绝钓鱼匹配
 
-# ====== Core Trading & API ======
+# ====== Core Trading & Auth (核心交易与鉴权) ======
 DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okx.ac
-DOMAIN-SUFFIX,okx.me
-DOMAIN-SUFFIX,okx.com.cn
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okexcn.com
+DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net # [新增] 防CDN劫持或解析错误
+DOMAIN-SUFFIX,okx-dns.com      # [新增] 部分DNS解析服务
+DOMAIN-SUFFIX,okx.me           # 常用短链
+DOMAIN-SUFFIX,okex.com         # 老域名，即使重定向也必须保留
 DOMAIN-SUFFIX,okex.me
 
-# ====== Blockchain Explorer ======
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,oklink.cn
-DOMAIN-SUFFIX,oklinkapi.com
+# ====== Infrastructure & API (基建与接口) ======
+DOMAIN-SUFFIX,okx-apps.com     # App功能模块
+DOMAIN-SUFFIX,okx-cdn.com      # 静态资源
+DOMAIN-SUFFIX,okx-images.com   # 图片加载
+DOMAIN-SUFFIX,oklink.com       # 区块浏览器，提币查哈希必用
 
-# ====== Wallet & Web3 ======
-DOMAIN-SUFFIX,okxpay.com
-DOMAIN-SUFFIX,okx-finance.com
+# ====== Support & Service (客服与服务) ======
+DOMAIN-SUFFIX,okx-support.com  # [新增] 客服系统
+DOMAIN-SUFFIX,zendesk.com      # OKX客服工单常走此域名，建议加上
+
+# ====== Wallet (仅保留核心鉴权，非Dapp流量) ======
 DOMAIN-SUFFIX,okxwallet.com
-DOMAIN-SUFFIX,okx-dapp.com
-
-# ====== Mobile & CDN ======
-DOMAIN-SUFFIX,okx-images.com
-DOMAIN-SUFFIX,okx-cdn.com
-DOMAIN-SUFFIX,okx-apps.com
-DOMAIN-SUFFIX,okxuser.com
-
-# ====== Fallback / legacy ======
-DOMAIN-KEYWORD,okx
-DOMAIN-KEYWORD,okex
-
-# ====== (Optional) IP CIDR for known nodes ======
-# 若你使用 Surge/Stash，可加上以下段用于识别专线
-# IP-CIDR,8.209.192.0/18,no-resolve
-# IP-CIDR,8.222.128.0/18,no-resolve
-# IP-CIDR,47.246.0.0/18,no-resolve
-
-# ====== Policy Routing ======
-# 建议在你的规则集中添加：
-# RULE-SET,okx,💱 OKX专线
-# 或者在 Clash 里：
-# - RULE-SET,OKX,OKX
-# 并在 proxy-groups 里添加 OKX 节点组
+DOMAIN-SUFFIX,okxpay.com
