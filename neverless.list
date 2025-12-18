@@ -1,4 +1,14 @@
+# NAME: Neverless (EU)
+# UPDATED: 2025-12-18
+# 策略：强烈建议走 欧洲(EU) 或 英国(UK) 原生节点
+# 警示：不要用美国节点，可能会因为合规问题(CFD/理财限制)屏蔽功能
 
-DOMAIN,yivd8v-launches.appsflyersdk.com
-DOMAIN-SUFFIX,neverless.com
+# ---- Core Service (核心业务) ----
+DOMAIN-SUFFIX,neverless.com      # 涵盖 api, auth, www 等核心功能
 
+# ---- 潜在依赖 (视网络环境添加) ----
+# Neverless 的某些图表或 CMS 可能依赖 Contentful，如遇到图片加载失败可尝试开启
+# DOMAIN-SUFFIX,contentful.com 
+
+# ---- 必须删除的垃圾 ----
+# yivd8v-launches.appsflyersdk.com (营销归因，删)
