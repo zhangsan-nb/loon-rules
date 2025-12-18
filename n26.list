@@ -1,21 +1,27 @@
-# N26 App 分流规则
-DOMAIN,api.usercentrics.eu
+# NAME: N26 (Europe/DE)
+# UPDATED: 2025-12-18
+# 策略：必须走 欧洲(EU) 原生住宅 IP (ISP)，严禁使用机房 IP
+# 警告：N26 对 IP 变动极度敏感，建议绑定固定 IP
 
-# N26 主域名和 API 域名
-DOMAIN-SUFFIX,n26.com
-DOMAIN-SUFFIX,api.tech26.de
-DOMAIN-SUFFIX,tech26.de
+# ---- Core API (核心后端 - 极其重要) ----
+DOMAIN-SUFFIX,tech26.de        # N26 的 API 骨架，转账、余额全走这里
+DOMAIN-SUFFIX,api.tech26.de    # 核心接口
 
-# N26 CDN及资源域名
-DOMAIN-SUFFIX,cdn.n26.com 
-DOMAIN-SUFFIX,static.n26.io 
-DOMAIN-SUFFIX,cdn.number26.de
+# ---- Frontend & App (前端与交互) ----
+DOMAIN-SUFFIX,n26.com          # 官网及部分新业务
+DOMAIN-SUFFIX,number26.de      # 旧域名，部分底层服务仍在使用
 
-# N26 安全和身份验证服务
-DOMAIN-SUFFIX,auth0.com
+# ---- Static & CDN (资源加载) ----
+DOMAIN-SUFFIX,cdn.n26.com
+DOMAIN-SUFFIX,static.n26.io
+DOMAIN-SUFFIX,n26.imgix.net    # [新增] 经常用于加载卡片图片和营销图
 
-# 其他相关服务
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,pushwoosh.com
-DOMAIN-SUFFIX,app.adjust.com
+# ---- Verification (身份验证/KYC - 视情况保留) ----
+# N26 视频认证常调用 IDnow，如果你需要重新认证或开户，必须加上这个
+DOMAIN-SUFFIX,idnow.de
+DOMAIN-SUFFIX,go-ident.com
 
+# ---- 必须删除的毒瘤 ----
+# auth0.com (剧毒，删)
+# segment.io / adjust.com (垃圾，删)
+# usercentrics.eu (无关，删)
