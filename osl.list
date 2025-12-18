@@ -1,16 +1,17 @@
-# NAME: OSL (enhanced)
-# UPDATED: 2025-11-20
+# NAME: OSL (Institutional)
+# UPDATED: 2025-12-18
+# 策略：必须走香港专线 (HK Dedicated IP)
 
-# ---- Core Trading & Web ----
+# ---- Core Platform (覆盖所有子域：API, RFQ, Trade, Docs) ----
 DOMAIN-SUFFIX,osl.com
 
-# ---- Trading / Login (HK / JP) ----
-DOMAIN-SUFFIX,trade-hk.osl.com
-DOMAIN-SUFFIX,trade-jp-api.osl.com
-DOMAIN-SUFFIX,trade-jp-wsapi.osl.com
-DOMAIN-SUFFIX,docs.osl.com
+# ---- Regional & Corporate (新加坡与母公司) ----
+DOMAIN-SUFFIX,osl.sg         # 新加坡分支，合规业务常有交叉
+DOMAIN-SUFFIX,bc.group       # 母公司 BC Technology Group，部分静态资源或公告
 
-# ---- Payments (OSL Pay) ----
-DOMAIN-SUFFIX,osl-pay.com
-DOMAIN-SUFFIX,pay.osl.com
-DOMAIN-SUFFIX,docs.pay.osl.com
+# ---- External Payments (支付与验证) ----
+DOMAIN-SUFFIX,osl-pay.com    # 独立的支付域名，不归属 osl.com
+
+# ---- 必须删除的废弃域名 ----
+# trade-jp-api.osl.com (业务已出售)
+# trade-jp-wsapi.osl.com
