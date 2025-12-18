@@ -1,7 +1,21 @@
-# Coinbase 分流规则
-DOMAIN-SUFFIX,coinbase.com
-DOMAIN-SUFFIX,coinbase.pro
-DOMAIN-SUFFIX,coinbase-wallet.prod
-DOMAIN-SUFFIX,coinbasecustody.com
-DOMAIN-SUFFIX,coinbaseprime.com
-DOMAIN-SUFFIX,coinbase.cloud
+# NAME: Coinbase (Retail)
+# UPDATED: 2025-12-18
+# 策略：必须走 严格的美国/欧盟原生 IP，严禁使用数据中心 IP
+
+# ---- Core Platform (核心交易) ----
+DOMAIN-SUFFIX,coinbase.com       # 涵盖了 api, www, login, wallet-api 等核心
+DOMAIN-SUFFIX,cb.id              # [新增] 关键！Coinbase Wallet 的用户名/ID 解析服务
+DOMAIN-SUFFIX,commerce.coinbase.com # 支付相关
+
+# ---- Infrastructure & Status (基建与状态) ----
+DOMAIN-SUFFIX,coinbase.cloud     # 开发平台，部分钱包功能依赖
+DOMAIN-SUFFIX,coinbasestatus.com # [新增] App 检查服务状态，连不上会一直转圈
+
+# ---- Assets & CDN (静态资源) ----
+# 大部分都在 coinbase.com 下，但偶尔会有边缘域名
+DOMAIN-SUFFIX,coinbase-corp.com  # 部分企业资源
+
+# ---- 必须删除的垃圾 ----
+# coinbase.pro (已死)
+# coinbase-wallet.prod (无效)
+# coinbasecustody.com (你用不着)
