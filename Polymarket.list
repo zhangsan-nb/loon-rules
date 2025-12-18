@@ -1,0 +1,19 @@
+# NAME: Polymarket-Real-World
+# UPDATED: 2025-12-18
+
+# ---- 核心主站 ----
+DOMAIN-SUFFIX,polymarket.com
+
+# ---- 真正的交易与数据中心 (核心命脉) ----
+DOMAIN-SUFFIX,clob.polymarket.com
+DOMAIN-SUFFIX,data-api.polymarket.com
+
+# ---- 身份验证与嵌入式钱包 (不分流则无法登录) ----
+DOMAIN-SUFFIX,privy.io
+DOMAIN-SUFFIX,auth.privy.io
+DOMAIN-SUFFIX,magic.link
+
+# ---- 底层基础服务 (加载提速/防卡死) ----
+DOMAIN-SUFFIX,fireblocks.io
+DOMAIN-SUFFIX,thegraph.com
+DOMAIN-SUFFIX,alchemy.com
