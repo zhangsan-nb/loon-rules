@@ -1,0 +1,42 @@
+# ---- 20251220-gemini
+# ---- Core Trading & API (核心交易与撮合) ----
+# 逻辑：这些域名承载下单、撤单、持仓查询，必须保证 0 丢包
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.io
+DOMAIN-SUFFIX,bybitapi.com
+DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,bytick.com
+DOMAIN-KEYWORD,bybit-api
+
+# ---- Real-time Data & WebSocket (行情推送) ----
+# 逻辑：K线走势、深度图、订单簿，这些走的是长连接，容易被防火墙干扰
+DOMAIN-SUFFIX,bybit.com.edgesuite.net
+DOMAIN-SUFFIX,byte-cdns.com
+DOMAIN-SUFFIX,bybitstatic.com
+
+# ---- Infrastructure & CDN (基建与加速) ----
+# 逻辑：解决 UI 资源、JS 脚本加载慢的问题，避免下单界面“白屏”
+DOMAIN-SUFFIX,bitgetimg.com     # 注意：Bybit 有时会共用部分底层 CDN 资源
+DOMAIN-SUFFIX,byimg.com
+DOMAIN-SUFFIX,akamaized.net     # [慎用] 仅限分流给 Bybit 走，它是 Bybit 使用的加速商
+DOMAIN-SUFFIX,edgekey.net
+
+# ---- Web3 & Ecosystem (Web3 钱包与生态) ----
+DOMAIN-SUFFIX,bybit.com.co
+DOMAIN-SUFFIX,apex.exchange
+DOMAIN-SUFFIX,bybit-exchange.github.io
+
+# ---- Support & Risk Control (客服、风控与验证) ----
+# 风险提示：如果这些不走代理，你可能会因为 IP 属地频繁变动被限制提现
+DOMAIN-SUFFIX,bybit.zendesk.com
+DOMAIN-SUFFIX,geetest.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,sumsub.com        # Bybit 同样使用 Sumsub 进行 KYC 验证
+
+# ---- 必须删除/拦截的危险域名 ----
+# bybit.pro (高仿/钓鱼)
+# bybit.net (过时)
+# bybit.vip (钓鱼)
