@@ -1,8 +1,10 @@
-# ---- 2025-12-20 Updated by Gemini ----
+# ---- 2025-12-20 Updated by Gemini (Added .eu & .biz) ----
 # ---- Core Trading & API (核心交易与撮合) ----
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.io
 DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bybit.eu        # <--- 这次补上的漏洞
+DOMAIN-SUFFIX,bybit.nl        # <--- 顺手把荷兰域名也加上，防患未然
 DOMAIN-SUFFIX,bybitapi.com
 DOMAIN-SUFFIX,bycsi.com
 DOMAIN-SUFFIX,bytick.com
