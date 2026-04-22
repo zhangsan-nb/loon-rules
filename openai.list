@@ -3,11 +3,14 @@
 # 策略：必须走美国/新加坡等支持 OpenAI 的原生解锁节点 (UDP 转发必须开启，否则语音模式会断)
 
 # ---- Core Service (核心服务) ----
+# 涵盖了 auth0 等所有官方子域
 DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chatgpt.com      # 现在的网页版主域
-DOMAIN-SUFFIX,ai.com           # 早期跳转域名，保留
-DOMAIN-SUFFIX,oaistatic.com    # 静态资源，图标、CSS等
-DOMAIN-SUFFIX,oaiusercontent.com # 用户上传的文件、生成的图片
+# 现在的网页版主域
+DOMAIN-SUFFIX,chatgpt.com
+# 静态资源，图标、CSS等
+DOMAIN-SUFFIX,oaistatic.com
+# 用户上传的文件、生成的图片
+DOMAIN-SUFFIX,oaiusercontent.com
 
 # ---- Infrastructure & CDN (基建) ----
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
@@ -20,14 +23,14 @@ DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,host.livekit.cloud
 
-# ---- Auth & Security (仅限 OpenAI 相关的子域) ----
+# ---- Auth & Security (仅限 Arkose Labs 验证相关) ----
 # 不要写死整个 arkoselabs.com，容易误伤其他网站的验证码
 DOMAIN,openai-api.arkoselabs.com
 DOMAIN,client-api.arkoselabs.com
-# 身份验证（有些登录跳转会用到，视情况保留，通常由主域覆盖）
-DOMAIN,auth0.openai.com 
 
 # ---- 必须删除的垃圾 ----
+# ai.com (早已易主，现属独立项目，强行绑定会导致严重路由劫持，删)
+# auth0.openai.com (已被主域 openai.com 后缀规则覆盖，纯属冗余，删)
 # gemini.google.com (离谱)
 # stripe.com (支付风控隐患)
 # sentry.io / intercom.io (很多App都在用，别劫持)
