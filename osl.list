@@ -2,16 +2,19 @@
 # UPDATED: 2025-12-18
 # 策略：必须走香港专线 (HK Dedicated IP)
 
-# ---- Core Platform (覆盖所有子域：API, RFQ, Trade, Docs) ----
+# ---- Core Platform (涵盖所有核心交易与API) ----
 DOMAIN-SUFFIX,osl.com
 
-# ---- Regional & Corporate (新加坡与母公司) ----
-DOMAIN-SUFFIX,osl.sg         # 新加坡分支，合规业务常有交叉
-DOMAIN-SUFFIX,bc.group       # 母公司 BC Technology Group，部分静态资源或公告
+# ---- Regional & Corporate (合规分支与母公司) ----
+# 新加坡分支，合规业务常有交叉
+DOMAIN-SUFFIX,osl.sg
+# 母公司原业务域名，部分静态资源或公告仍在此处
+DOMAIN-SUFFIX,bc.group
 
-# ---- External Payments (支付与验证) ----
-DOMAIN-SUFFIX,osl-pay.com    # 独立的支付域名，不归属 osl.com
+# ---- External Payments (法币与支付网关) ----
+# 独立的支付域名，不归属 osl.com
+DOMAIN-SUFFIX,osl-pay.com
 
 # ---- 必须删除的废弃域名 ----
-# trade-jp-api.osl.com (业务已出售)
+# trade-jp-api.osl.com (日本业务线已调整，且已被主域覆盖)
 # trade-jp-wsapi.osl.com
