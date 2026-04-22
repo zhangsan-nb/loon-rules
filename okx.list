@@ -14,6 +14,9 @@ DOMAIN-SUFFIX,okx.me
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okex.me
 
+# 拦截所有 OKX 底层防污染 DNS 探测域名 (含 okx-dns1, okx-dns2 等所有编号)
+DOMAIN-KEYWORD,okx-dns
+
 # ====== Infrastructure & API (基建与接口) ======
 # App功能模块
 DOMAIN-SUFFIX,okx-apps.com
