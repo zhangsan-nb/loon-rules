@@ -4,7 +4,8 @@
 
 # ---- Core Service (核心信令与网页) ----
 DOMAIN-SUFFIX,voice.google.com
-DOMAIN,voice.telephony.goog     # 关键：通话建立时的信令域名
+# 关键：通话建立时的信令域名
+DOMAIN,voice.telephony.goog
 
 # ---- Legacy & Backend (旧架构兼容) ----
 # 虽然 Hangouts 死了，但 GV 后端仍共用部分架构，建议加上防漏
