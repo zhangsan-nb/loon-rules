@@ -1,24 +1,34 @@
 # NAME: OKX (Trader Edition)
 # UPDATED: 2025-12-18
-# 策略：纯净、低延迟、拒绝钓鱼匹配
+# 策略：推荐走 台湾(TW) 或 日本(JP) 节点，严禁走 香港(HK)、美国(US) 或 新加坡(SG) 节点
 
 # ====== Core Trading & Auth (核心交易与鉴权) ======
 DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net # [新增] 防CDN劫持或解析错误
-DOMAIN-SUFFIX,okx-dns.com      # [新增] 部分DNS解析服务
-DOMAIN-SUFFIX,okx.me           # 常用短链
-DOMAIN-SUFFIX,okex.com         # 老域名，即使重定向也必须保留
+# [新增] 防CDN劫持或解析错误 (注：尽量依赖主域名解析，Cloudflare节点偶有被墙风险)
+DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
+# [新增] 部分DNS解析服务
+DOMAIN-SUFFIX,okx-dns.com
+# 常用短链
+DOMAIN-SUFFIX,okx.me
+# 老域名，即使重定向也必须保留
+DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okex.me
 
 # ====== Infrastructure & API (基建与接口) ======
-DOMAIN-SUFFIX,okx-apps.com     # App功能模块
-DOMAIN-SUFFIX,okx-cdn.com      # 静态资源
-DOMAIN-SUFFIX,okx-images.com   # 图片加载
-DOMAIN-SUFFIX,oklink.com       # 区块浏览器，提币查哈希必用
+# App功能模块
+DOMAIN-SUFFIX,okx-apps.com
+# 静态资源
+DOMAIN-SUFFIX,okx-cdn.com
+# 图片加载
+DOMAIN-SUFFIX,okx-images.com
+# 区块浏览器，提币查哈希必用
+DOMAIN-SUFFIX,oklink.com
 
 # ====== Support & Service (客服与服务) ======
-DOMAIN-SUFFIX,okx-support.com  # [新增] 客服系统
-DOMAIN-SUFFIX,zendesk.com      # OKX客服工单常走此域名，建议加上
+# [新增] 客服系统
+DOMAIN-SUFFIX,okx-support.com
+# [修正] 屡教不改的全局劫持，已强行缩小为 OKX 专属子域！
+DOMAIN-SUFFIX,okx.zendesk.com
 
 # ====== Wallet (仅保留核心鉴权，非Dapp流量) ======
 DOMAIN-SUFFIX,okxwallet.com
