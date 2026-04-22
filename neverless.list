@@ -4,11 +4,12 @@
 # 警示：不要用美国节点，可能会因为合规问题(CFD/理财限制)屏蔽功能
 
 # ---- Core Service (核心业务) ----
-DOMAIN-SUFFIX,neverless.com      # 涵盖 api, auth, www 等核心功能
+# 涵盖 api, auth, www 等核心功能
+DOMAIN-SUFFIX,neverless.com
 
-# ---- 潜在依赖 (视网络环境添加) ----
-# Neverless 的某些图表或 CMS 可能依赖 Contentful，如遇到图片加载失败可尝试开启
-# DOMAIN-SUFFIX,contentful.com 
+# ---- 潜在依赖 (绝对不要在此列表添加) ----
+# [警告] Contentful 是全球通用 CMS。如果遇到图片加载失败，请将其加入你的“基础设施/全局 CDN”策略，严禁与 Neverless 节点强制绑定。
+# DOMAIN-SUFFIX,contentful.com
 
 # ---- 必须删除的垃圾 ----
 # yivd8v-launches.appsflyersdk.com (营销归因，删)
