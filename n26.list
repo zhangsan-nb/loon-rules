@@ -20,6 +20,9 @@ DOMAIN-SUFFIX,cdn.n26.com
 DOMAIN-SUFFIX,static.n26.io
 # [新增] 经常用于加载卡片图片和营销图
 DOMAIN-SUFFIX,n26.imgix.net
+# N26 存放在 AWS 的静态和营销资源，必须强制同节点，防止触发 IP 分裂风控
+DOMAIN,n26-admedia.s3.eu-central-1.amazonaws.com
+DOMAIN-KEYWORD,n26-admedia
 
 # ---- Verification (身份验证/KYC - 视情况保留) ----
 # N26 视频认证常调用 IDnow，如果你需要重新认证或开户，必须加上这个
