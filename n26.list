@@ -4,17 +4,22 @@
 # 警告：N26 对 IP 变动极度敏感，建议绑定固定 IP
 
 # ---- Core API (核心后端 - 极其重要) ----
-DOMAIN-SUFFIX,tech26.de        # N26 的 API 骨架，转账、余额全走这里
-DOMAIN-SUFFIX,api.tech26.de    # 核心接口
+# N26 的 API 骨架，转账、余额全走这里
+DOMAIN-SUFFIX,tech26.de
+# 核心接口
+DOMAIN-SUFFIX,api.tech26.de
 
 # ---- Frontend & App (前端与交互) ----
-DOMAIN-SUFFIX,n26.com          # 官网及部分新业务
-DOMAIN-SUFFIX,number26.de      # 旧域名，部分底层服务仍在使用
+# 官网及部分新业务
+DOMAIN-SUFFIX,n26.com
+# 旧域名，部分底层服务仍在使用
+DOMAIN-SUFFIX,number26.de
 
 # ---- Static & CDN (资源加载) ----
 DOMAIN-SUFFIX,cdn.n26.com
 DOMAIN-SUFFIX,static.n26.io
-DOMAIN-SUFFIX,n26.imgix.net    # [新增] 经常用于加载卡片图片和营销图
+# [新增] 经常用于加载卡片图片和营销图
+DOMAIN-SUFFIX,n26.imgix.net
 
 # ---- Verification (身份验证/KYC - 视情况保留) ----
 # N26 视频认证常调用 IDnow，如果你需要重新认证或开户，必须加上这个
