@@ -1,10 +1,15 @@
-# ---- 2025-12-20 Updated by Gemini (Added .eu & .biz) ----
+# NAME: Bybit (Pro)
+# UPDATED: 2025-12-20
+# 策略建议：建议走 台湾(TW) 或其他支持衍生品交易的纯净节点
+
 # ---- Core Trading & API (核心交易与撮合) ----
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.io
 DOMAIN-SUFFIX,bybit.biz
-DOMAIN-SUFFIX,bybit.eu        # <--- 这次补上的漏洞
-DOMAIN-SUFFIX,bybit.nl        # <--- 顺手把荷兰域名也加上，防患未然
+# 欧洲区备用
+DOMAIN-SUFFIX,bybit.eu
+# 荷兰域名备用
+DOMAIN-SUFFIX,bybit.nl
 DOMAIN-SUFFIX,bybitapi.com
 DOMAIN-SUFFIX,bycsi.com
 DOMAIN-SUFFIX,bytick.com
@@ -16,21 +21,18 @@ DOMAIN-SUFFIX,byte-cdns.com
 DOMAIN-SUFFIX,bybitstatic.com
 
 # ---- Infrastructure & CDN (基建与加速) ----
-DOMAIN-SUFFIX,bitgetimg.com
+# [警告] 已剔除 akamaized / edgekey 等全局级 CDN，防止拖垮整体网络
+# [警告] 已剔除错误复制的 bitgetimg
 DOMAIN-SUFFIX,byimg.com
-DOMAIN-SUFFIX,akamaized.net
-DOMAIN-SUFFIX,edgekey.net
 
 # ---- Web3 & Ecosystem (Web3 钱包与生态) ----
 DOMAIN-SUFFIX,bybit.com.co
 DOMAIN-SUFFIX,apex.exchange
 DOMAIN-SUFFIX,bybit-exchange.github.io
 
-# ---- Support & Risk Control (客服、风控与验证) ----
+# ---- Support & Risk Control (客服与风控) ----
+# [警告] 通用验证码/风控 (recaptcha/hcaptcha/geetest) 已剔除，请交由全局规则处理
 DOMAIN-SUFFIX,bybit.zendesk.com
-DOMAIN-SUFFIX,geetest.com
-DOMAIN-SUFFIX,recaptcha.net
-DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,sumsub.com
