@@ -3,14 +3,19 @@
 # 策略：必须走美国/英国/新加坡的原生节点 (住宅IP最佳)，严禁频繁变动
 
 # ---- Core Service (核心服务) ----
-DOMAIN-SUFFIX,anthropic.com    # 涵盖了 api, console, www 等
-DOMAIN-SUFFIX,claude.ai        # 网页版主域
-DOMAIN-SUFFIX,claudeusercontent.com # 附件、Artifacts 预览
-DOMAIN-SUFFIX,claude.user.content # [新增] 部分新版资源域名
+# 涵盖了 api, console, www 等
+DOMAIN-SUFFIX,anthropic.com
+# 网页版主域
+DOMAIN-SUFFIX,claude.ai
+# 附件、Artifacts 预览
+DOMAIN-SUFFIX,claudeusercontent.com
+# [新增] 部分新版资源域名（注：需复核是否为伪造域名）
+DOMAIN-SUFFIX,claude.user.content
 
 # ---- Infrastructure (部分必要的基建) ----
 # 仅保留 Claude 强依赖且较少误伤的
-DOMAIN-SUFFIX,usefathom.com    # Claude 网页版常用的无隐私分析（可选）
+# Claude 网页版常用的无隐私分析（可选）
+DOMAIN-SUFFIX,usefathom.com
 
 # ---- 必须删除的垃圾 ----
 # cloudflare.net (绝对不能加，这是自杀)
