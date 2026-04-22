@@ -4,9 +4,12 @@
 
 # ---- Core Service (核心业务) ----
 DOMAIN-SUFFIX,curve.com
-DOMAIN-SUFFIX,curve.app            # 短链与App关联
-DOMAIN-SUFFIX,imaginecurve.com     # 公司旧实体名，API 仍大量使用
-DOMAIN-SUFFIX,curve.systems        # [新增] 后端系统常涉及的域名
+# 短链与App关联
+DOMAIN-SUFFIX,curve.app
+# 公司旧实体名，API 仍大量使用
+DOMAIN-SUFFIX,imaginecurve.com
+# [新增] 后端系统常涉及的域名
+DOMAIN-SUFFIX,curve.systems
 
 # ---- API Specifics (明确的接口) ----
 # 这些子域名其实被上面的主域覆盖了，但为了防止DNS解析策略遗漏，可显式保留
