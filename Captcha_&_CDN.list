@@ -1,0 +1,37 @@
+# NAME: Global Infrastructure (验证码、防污染解析与通用基建)
+# UPDATED: 2026-04-26
+# 策略建议：必须绑定一个“延迟低、带宽大”的日常全能节点（如优质的香港/新加坡节点），【绝对禁止】绑定给你的 OKX/Binance 等专用交易节点！
+
+# ====== Part 1: DoH & DNS (底层防劫持解析) ======
+# 承接各类 App 内置的加密 DNS 请求，死在这里 App 就直接断网
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,dns.google
+DOMAIN-SUFFIX,doh.opendns.com
+DOMAIN-SUFFIX,doh.dns.apple.com
+
+# ====== Part 2: Anti-Bot & Captcha (全球通用验证码/风控) ======
+# 保护你的交易 IP 不被这些组件污染成“万人骑”的滥用 IP
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,geetest.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,funcaptcha.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-KEYWORD,captcha
+
+# ====== Part 3: Global CDN & Edge (泛用型边缘加速) ======
+# 全球巨头都在用的静态下发节点，流量极大，绝不能让它们去挤占交易带宽
+DOMAIN-SUFFIX,akamaized.net
+DOMAIN-SUFFIX,edgekey.net
+DOMAIN-SUFFIX,edgesuite.net
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,fastly.net
+
+# ====== Part 4: Basic Web UI & Fonts (底层渲染必需品) ======
+# 很多 App 如果连不上这些域名，前端页面会直接卡白屏，按键都加载不出来
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,fonts.googleapis.com
+DOMAIN-SUFFIX,fonts.gstatic.com
+DOMAIN-SUFFIX,cdnjs.cloudflare.com
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,unpkg.com
