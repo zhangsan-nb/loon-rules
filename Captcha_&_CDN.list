@@ -35,3 +35,8 @@ DOMAIN-SUFFIX,fonts.gstatic.com
 DOMAIN-SUFFIX,cdnjs.cloudflare.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,unpkg.com
+
+# ====== Part 5: Global Support & Chat (全球通用客服系统) ======
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,zendesk.com
