@@ -35,6 +35,4 @@ DOMAIN-SUFFIX,bybit-exchange.github.io
 # ---- Support & Risk Control (客服与风控) ----
 # [警告] 通用验证码/风控 (recaptcha/hcaptcha/geetest) 已剔除，请交由全局规则处理
 DOMAIN-SUFFIX,bybit.zendesk.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,sumsub.com
