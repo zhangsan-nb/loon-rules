@@ -6,6 +6,8 @@
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.io
 DOMAIN-SUFFIX,bybit.biz
+# 拦截 Bybit 数据中心及所有带编号的底层 API 变种 (如 bybdc6 等)
+DOMAIN-KEYWORD,bybdc
 # 欧洲区备用
 DOMAIN-SUFFIX,bybit.eu
 # 荷兰域名备用
