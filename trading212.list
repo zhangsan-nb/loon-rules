@@ -1,12 +1,16 @@
 # NAME: Trading 212 (Stable)
-# UPDATED: 2026-04-22
+# UPDATED: 2026-05-02
 # 策略：必须走 英国(UK) 或 欧盟(EU) 原生 IP，严禁频繁跳动
 
-# 涵盖了 live, demo, analytics 等所有子域
+# --- Trading 212 主域名及 API ---
 DOMAIN-SUFFIX,trading212.com
-# 英国区核心
 DOMAIN-SUFFIX,trading212.co.uk
-# 数据接口
-DOMAIN-SUFFIX,trading212api.com
-DOMAIN-SUFFIX,chartiq.com
 DOMAIN-SUFFIX,trading212.io
+DOMAIN-SUFFIX,trading212api.com
+
+# --- 核心数据接口与图表库 ---
+DOMAIN-SUFFIX,chartiq.com
+
+# --- 必须修复的资产文件泄漏漏洞 (AWS S3) ---
+# 注意：这是为了防止你的静态资源请求跑去香港，导致风控审计发现 IP 交叉
+DOMAIN,trading212equities.s3.eu-central-1.amazonaws.com
