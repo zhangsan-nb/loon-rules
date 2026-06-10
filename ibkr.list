@@ -1,0 +1,43 @@
+# NAME: IBKR (Trader Edition)
+# UPDATED: 2026-06-10
+# 策略：强烈推荐走 美国(US) 节点 (IBKR 核心数据中心与撮合引擎在美东)
+# 备选：根据你的账户归属，也可走 新加坡(SG) 或 香港(HK) 节点实现就近接入
+
+# ---- Core Trading & Web Portal (核心交易与网页端) ----
+# 官方主域（涵盖账户管理、出入金、Client Portal 网页交易）
+DOMAIN-SUFFIX,interactivebrokers.com
+# 极重要！盈透官方缩写主域（涵盖了行情、新版桌面端及核心 API 路由）
+DOMAIN-SUFFIX,ibkr.com
+# [新增] 盈透主要的短域名，常用于移动端及部分后台微服务
+DOMAIN-SUFFIX,ibkr.app
+
+# ---- Trader Workstation & API (TWS 客户端与专用网关) ----
+# 极其重要！TWS 桌面端、IB Gateway、行情下发及底层高防的核心域名（遗漏会导致客户端锁死或断连）
+DOMAIN-SUFFIX,ibllc.com
+# [新增] TWS 专用自动更新及组件下载加速域名
+DOMAIN-SUFFIX,ibllc.com.cn
+
+# ---- Regional Operations (全球各地区合规分流域名) ----
+# 亚太区及香港实体域名（行情和本地数据落地）
+DOMAIN-SUFFIX,interactivebrokers.com.hk
+# 新加坡实体域名（东南亚用户合规与本地网关）
+DOMAIN-SUFFIX,interactivebrokers.com.sg
+# 英国及欧洲区实体域名
+DOMAIN-SUFFIX,interactivebrokers.co.uk
+# 欧洲爱尔兰/中东实体域名
+DOMAIN-SUFFIX,interactivebrokers.ie
+# 加拿大实体域名
+DOMAIN-SUFFIX,interactivebrokers.ca
+# 日本实体域名
+DOMAIN-SUFFIX,interactivebrokers.co.jp
+
+# ---- Infrastructure & Tools (基建、学院与分析工具) ----
+# 官方图表、量化博客及研究报告（IBKR Quant）的托管和加速域名
+DOMAIN-SUFFIX,ibkr campus.com
+# [新增] 盈透投资组合分析工具（PortfolioAnalyst）专属主域
+DOMAIN-SUFFIX,portfolioanalyst.com
+
+# ---- 必须删除的垃圾与地雷 ----
+# ibkr.vip / .top / .cc (高仿钓鱼高危区，删)
+# ibkr-fx.com / ibkr-crypto.com (打着盈透旗号的外汇/加密货币杀猪盘诈骗网站，删)
+# ibkr-china.com (非官方臆造域名，删)
