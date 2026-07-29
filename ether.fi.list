@@ -1,1 +1,13 @@
+# NAME: ether.fi (Cash & Membership)
+# UPDATED: 2026-07-29
+# 策略：建议使用稳定的海外节点，登录、开户或 KYC 期间避免频繁切换 IP
+
+# ---- Core Platform (核心平台) ----
+# 覆盖 ether.fi 官网、Cash、Membership、Stake、Earn 等页面
+# 同时匹配 www.ether.fi、help.ether.fi 以及其他官方子域名
 DOMAIN-SUFFIX,ether.fi
+
+# ---- Third-Party Services (第三方服务) ----
+# 暂不加入钱包登录、KYC、RPC、客服和 CDN 等公共域名
+# 这些域名可能被大量其他应用共用，直接加入会扩大分流范围
+# 如出现登录失败、验证码不显示或页面持续转圈，再根据 Loon 日志补充
