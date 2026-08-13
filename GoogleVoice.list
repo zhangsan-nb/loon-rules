@@ -11,9 +11,10 @@ DOMAIN,voice.telephony.goog
 # 虽然 Hangouts 死了，但 GV 后端仍共用部分架构，建议加上防漏
 DOMAIN-SUFFIX,hangouts.google.com
 
-# ---- 暴力兜底 Google 真实 IP 流 (防 WebRTC 漏包) ----
-# 警告：这是拦截无域名 UDP 语音包的杀招
-IP-ASN,15169,美国手动策略,no-resolve
+# ---- 已移除：ASN 暴力兜底 ----
+# IP-ASN,15169 会匹配整个 Google ASN 的纯 IP 流量（不只是 Google Voice），
+# 极易卷入其他 Google 服务的流量，已从主规则中移除。
+# 如确需拦截无域名 UDP 语音包，请单独建一条规则并限定范围，勿放主规则。
 
 # ---- STUN/ICE (语音流穿透) ----
 # 这是一个子集，不要写 stun.l.google.com (太窄) 或 google.com (太宽)

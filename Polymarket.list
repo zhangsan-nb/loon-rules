@@ -8,12 +8,7 @@ DOMAIN-SUFFIX,polymarket.com
 DOMAIN-SUFFIX,clob.polymarket.com
 DOMAIN-SUFFIX,data-api.polymarket.com
 
-# ---- 身份验证与嵌入式钱包 (不分流则无法登录) ----
-DOMAIN-SUFFIX,privy.io
-DOMAIN-SUFFIX,auth.privy.io
-DOMAIN-SUFFIX,magic.link
-
-# ---- 底层基础服务 (加载提速/防卡死) ----
-DOMAIN-SUFFIX,fireblocks.io
-DOMAIN-SUFFIX,thegraph.com
-DOMAIN-SUFFIX,alchemy.com
+# ---- 共享第三方 (钱包登录/RPC 等) ----
+# 已移至公共规则 Web3_Auth.list，避免把其他 Web3 应用的流量拉到 Polymarket 节点
+# privy.io / magic.link / fireblocks.io / thegraph.com / alchemy.com
+# 提醒：需在 Loon 中把 Web3_Auth.list 挂到通用节点，否则这些流量会掉入 Final

@@ -1,14 +1,15 @@
-# Telefonica / O2
-DOMAIN-KEYWORD,telefonica,德国
-DOMAIN-KEYWORD,o2,德国
+# NAME: O2 (Germany / Telefónica Deutschland)
+# UPDATED: 2026-08-14
+# 策略：由外层 Remote Rule 统一指定 德国(DE) 节点，不要在文件内写策略
 
-# eSIM
-DOMAIN-KEYWORD,esim,德国
-DOMAIN-KEYWORD,smdp,德国
-DOMAIN-KEYWORD,rsp,德国
+# ---- Official Domains (德国 O2 官方域) ----
+# o2online.de / o2.de 为德国 O2 官方明确使用的域名
+DOMAIN-SUFFIX,o2.de
+DOMAIN-SUFFIX,o2online.de
+# 母公司 Telefónica Deutschland
+DOMAIN-SUFFIX,telefonica.de
 
-# GSMA
-DOMAIN-KEYWORD,gsma,德国
-
-# 3GPP
-DOMAIN-SUFFIX,3gppnetwork.org,德国
+# ---- eSIM / eUICC ----
+# 真实 SM-DP+ 地址请根据 Loon 运行日志精确补充
+# 不要再用 esim / smdp / rsp / gsma 等 DOMAIN-KEYWORD，会误匹配大量无关域名
+DOMAIN-SUFFIX,3gppnetwork.org

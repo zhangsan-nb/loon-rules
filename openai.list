@@ -11,6 +11,8 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 # 用户上传的文件、生成的图片
 DOMAIN-SUFFIX,oaiusercontent.com
+# 官方遥测/特性开关（Statsig），网络允许列表中包含 *.oaistatsig.com
+DOMAIN-SUFFIX,oaistatsig.com
 
 # ---- Infrastructure & CDN (基建) ----
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
@@ -18,7 +20,7 @@ DOMAIN-SUFFIX,openaicom.imgix.net
 
 # ---- Voice Mode & Realtime (语音模式/实时通信 - 关键) ----
 # 这一部分对节点要求极高，必须支持 UDP
-DOMAIN-SUFFIX,livekit.cloud
+# 只绑定 OpenAI 专属的 LiveKit 主机，勿用整个 livekit.cloud（会误抓其他 LiveKit 客户流量）
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,host.livekit.cloud
