@@ -7,10 +7,10 @@
 DOMAIN-SUFFIX,anthropic.com
 # 网页版主域
 DOMAIN-SUFFIX,claude.ai
+# 官方并列主域（Anthropic 官方网络文档将 claude.com 与 claude.ai / anthropic.com 并列）
+DOMAIN-SUFFIX,claude.com
 # 附件、Artifacts 预览
 DOMAIN-SUFFIX,claudeusercontent.com
-# [新增] 部分新版资源域名（注：需复核是否为伪造域名）
-DOMAIN-SUFFIX,claude.user.content
 
 # ---- Infrastructure (部分必要的基建) ----
 # 仅保留 Claude 强依赖且较少误伤的

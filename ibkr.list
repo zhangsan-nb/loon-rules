@@ -32,8 +32,8 @@ DOMAIN-SUFFIX,interactivebrokers.ca
 DOMAIN-SUFFIX,interactivebrokers.co.jp
 
 # ---- Infrastructure & Tools (基建、学院与分析工具) ----
-# 官方图表、量化博客及研究报告（IBKR Quant）的托管和加速域名
-DOMAIN-SUFFIX,ibkr campus.com
+# 官方图表、量化博客及研究报告（IBKR Campus）的托管和加速域名
+DOMAIN-SUFFIX,ibkrcampus.com
 # [新增] 盈透投资组合分析工具（PortfolioAnalyst）专属主域
 DOMAIN-SUFFIX,portfolioanalyst.com
 

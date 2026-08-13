@@ -17,7 +17,7 @@ DOMAIN-SUFFIX,geetest.com
 DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,funcaptcha.com
 DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-KEYWORD,captcha
+# DOMAIN-KEYWORD,captcha 已移除：会匹配任何域名中含 captcha 的主机，不只是验证码厂商
 
 # ====== Part 3: Global CDN & Edge (泛用型边缘加速) ======
 # 全球巨头都在用的静态下发节点，流量极大，绝不能让它们去挤占交易带宽
