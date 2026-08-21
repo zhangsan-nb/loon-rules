@@ -1,5 +1,5 @@
 # NAME: IBKR (Trader Edition)
-# UPDATED: 2026-06-10
+# UPDATED: 2026-08-21
 # 策略：强烈推荐走 美国(US) 节点 (IBKR 核心数据中心与撮合引擎在美东)
 # 备选：根据你的账户归属，也可走 新加坡(SG) 或 香港(HK) 节点实现就近接入
 
@@ -20,8 +20,13 @@ DOMAIN-SUFFIX,ibllc.com.cn
 # ---- Regional Operations (全球各地区合规分流域名) ----
 # 亚太区及香港实体域名（行情和本地数据落地）
 DOMAIN-SUFFIX,interactivebrokers.com.hk
+# 中国站与本地客户端入口
+DOMAIN-SUFFIX,ibkr.com.cn
 # 新加坡实体域名（东南亚用户合规与本地网关）
 DOMAIN-SUFFIX,interactivebrokers.com.sg
+# 澳大利亚与印度官方区域站
+DOMAIN-SUFFIX,interactivebrokers.com.au
+DOMAIN-SUFFIX,interactivebrokers.co.in
 # 英国及欧洲区实体域名
 DOMAIN-SUFFIX,interactivebrokers.co.uk
 # 欧洲爱尔兰/中东实体域名

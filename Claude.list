@@ -1,5 +1,5 @@
 # NAME: Claude (Pure)
-# UPDATED: 2025-12-18
+# UPDATED: 2026-08-21
 # 策略：必须走美国/英国/新加坡的原生节点 (住宅IP最佳)，严禁频繁变动
 
 # ---- Core Service (核心服务) ----
@@ -12,10 +12,9 @@ DOMAIN-SUFFIX,claude.com
 # 附件、Artifacts 预览
 DOMAIN-SUFFIX,claudeusercontent.com
 
-# ---- Infrastructure (部分必要的基建) ----
-# 仅保留 Claude 强依赖且较少误伤的
-# Claude 网页版常用的无隐私分析（可选）
-DOMAIN-SUFFIX,usefathom.com
+# ---- Infrastructure (必要基建) ----
+# 官方网络要求中的核心主机均已被上述 anthropic.com / claude.ai /
+# claude.com / claudeusercontent.com 覆盖；不再强制代理可选分析服务。
 
 # ---- 必须删除的垃圾 ----
 # cloudflare.net (绝对不能加，这是自杀)
