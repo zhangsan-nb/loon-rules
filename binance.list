@@ -1,5 +1,5 @@
 # NAME: Binance (Pro)
-# UPDATED: 2025-12-18
+# UPDATED: 2026-08-21
 # 策略建议：务必走“代理” (Proxy)，建议绑定 台湾(TW) 节点（支持合约且无政策封锁）
 
 # ---- Core Trading & Infrastructure (核心交易与基建) ----
@@ -8,6 +8,8 @@ DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.net
 # API 接口
 DOMAIN-SUFFIX,binanceapi.com
+# 官方 OAuth / Mini Program OpenAPI 使用的复数域名
+DOMAIN-SUFFIX,binanceapis.com
 # 常用短链接/重定向
 DOMAIN-SUFFIX,binance.me
 # [新增] 部分即时通讯/客服服务
@@ -29,7 +31,7 @@ DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.vision
 
 # ---- Wallet & Auth (钱包与鉴权) ----
-DOMAIN-SUFFIX,wallet.binance.com
+# wallet.binance.com、accounts.binance.com 已由 binance.com 覆盖
 # 关键：App登录鉴权常走此域名
 DOMAIN-SUFFIX,saasexch.com
 # 关键：同上
@@ -41,9 +43,8 @@ DOMAIN-SUFFIX,binance.download
 # 这里的官网短链有时用于下载跳转
 DOMAIN-SUFFIX,binance.co
 
-# ---- Explicit Stream (显式流媒体 - 提升优先级) ----
-# 虽然包含在 binance.com 中，但单独列出有助于排查和分流
-DOMAIN-SUFFIX,stream.binance.com
+# ---- Stream (行情流) ----
+# stream.binance.com 及各 API/WebSocket 子域已由 binance.com 覆盖
 
 # ---- Optional / Deprecated (可选/旧域名) ----
 # 主要是BSC链上相关，通常不需要代理，除非看浏览器

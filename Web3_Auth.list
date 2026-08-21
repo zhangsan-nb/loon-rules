@@ -1,5 +1,5 @@
 # NAME: Web3 Auth & Infrastructure (公共规则)
-# UPDATED: 2026-08-14
+# UPDATED: 2026-08-21
 # 用途：多个 Web3 应用共用的钱包登录/鉴权/RPC 基建
 # 策略建议：挂一个稳定的通用节点，不要绑死到某个单一交易所/业务节点
 
@@ -8,6 +8,9 @@
 DOMAIN-SUFFIX,privy.io
 # Magic：邮箱/社交登录 + 钱包抽象，多个项目共用
 DOMAIN-SUFFIX,magic.link
+# WalletConnect / Reown：钱包配对、Relay 与 RPC
+DOMAIN-SUFFIX,walletconnect.com
+DOMAIN-SUFFIX,walletconnect.org
 
 # ---- Infra / RPC / Data (底层基建) ----
 # Fireblocks：机构级托管与数字资产运营
@@ -16,3 +19,5 @@ DOMAIN-SUFFIX,fireblocks.io
 DOMAIN-SUFFIX,thegraph.com
 # Alchemy：主流 RPC/节点服务商
 DOMAIN-SUFFIX,alchemy.com
+# Safe：智能账户与交易服务 API
+DOMAIN-SUFFIX,safe.global

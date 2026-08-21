@@ -1,5 +1,5 @@
 # NAME: Bybit (Pro)
-# UPDATED: 2025-12-20
+# UPDATED: 2026-08-21
 # 策略建议：建议走 台湾(TW) 或其他支持衍生品交易的纯净节点
 
 # ---- Core Trading & API (核心交易与撮合) ----
@@ -12,6 +12,16 @@ DOMAIN-KEYWORD,bybdc
 DOMAIN-SUFFIX,bybit.eu
 # 荷兰域名备用
 DOMAIN-SUFFIX,bybit.nl
+# 官方区域站与对应 API/WebSocket 根域
+DOMAIN-SUFFIX,bybit.tr
+DOMAIN-SUFFIX,bybit-tr.com
+DOMAIN-SUFFIX,bybit.kz
+DOMAIN-SUFFIX,bybitgeorgia.ge
+DOMAIN-SUFFIX,bybit.ae
+DOMAIN-SUFFIX,bybit.id
+# 日本区域合作品牌与 API 根域
+DOMAIN-SUFFIX,manepa.jp
+DOMAIN-SUFFIX,spark-fintech.com
 DOMAIN-SUFFIX,bybitapi.com
 DOMAIN-SUFFIX,bycsi.com
 DOMAIN-SUFFIX,bytick.com

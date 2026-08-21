@@ -1,5 +1,5 @@
 # NAME: OpenAI (Pro)
-# UPDATED: 2025-12-18
+# UPDATED: 2026-08-21
 # 策略：必须走美国/新加坡等支持 OpenAI 的原生解锁节点 (UDP 转发必须开启，否则语音模式会断)
 
 # ---- Core Service (核心服务) ----
@@ -13,10 +13,33 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 # 官方遥测/特性开关（Statsig），网络允许列表中包含 *.oaistatsig.com
 DOMAIN-SUFFIX,oaistatsig.com
+# OpenAI 官方网络允许列表中的专用特性、注册与合并资源域
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,featureassets.org
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-SUFFIX,openaimerge.com
+
+# 官方允许列表中的 Statsig 依赖（属于共享服务，仅在 OpenAI 功能异常时启用本规则）
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
 
 # ---- Infrastructure & CDN (基建) ----
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
+
+# ---- Official Third-Party Hosts (官方列出的精确第三方主机) ----
+# 只列 OpenAI 文档明确要求的主机，不扩大到整个供应商根域
+DOMAIN,ct.sendgrid.net
+DOMAIN,cdn.workos.com
+DOMAIN,forwarder.workos.com
+DOMAIN,setup.workos.com
+DOMAIN,images.workoscdn.com
+DOMAIN,workos.imgix.net
+DOMAIN,js.stripe.com
+DOMAIN,humb.apple.com
+DOMAIN,o207216.ingest.sentry.io
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,rum.browser-intake-datadoghq.com
 
 # ---- Voice Mode & Realtime (语音模式/实时通信 - 关键) ----
 # 这一部分对节点要求极高，必须支持 UDP

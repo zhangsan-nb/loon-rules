@@ -1,5 +1,5 @@
 # NAME: Polymarket-Real-World
-# UPDATED: 2025-12-18
+# UPDATED: 2026-08-21
 
 # ---- 核心主站 ----
 DOMAIN-SUFFIX,polymarket.com
@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,polymarket.com
 # ---- 真正的交易与数据中心 (核心命脉) ----
 DOMAIN-SUFFIX,clob.polymarket.com
 DOMAIN-SUFFIX,data-api.polymarket.com
+DOMAIN-SUFFIX,gamma-api.polymarket.com
 
 # ---- 共享第三方 (钱包登录/RPC 等) ----
 # 已移至公共规则 Web3_Auth.list，避免把其他 Web3 应用的流量拉到 Polymarket 节点

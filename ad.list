@@ -1,3 +1,5 @@
+# NAME: Application Ads
+# UPDATED: 2026-08-21
 # 各种去广告
 
 
@@ -34,7 +36,6 @@ DOMAIN-KEYWORD,video-cn.snssdk.com
 DOMAIN-KEYWORD,asiad.byteactivity
 DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
-DOMAIN,wn.pos.baidu.com
 DOMAIN,bgg.baidu.com
 DOMAIN,als.baidu.com
 DOMAIN,feed-image.baidu.com
@@ -45,6 +46,15 @@ DOMAIN,sdk.e.qq.com
 DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,gdtimg.com
 DOMAIN-SUFFIX,gdt.qq.com
+
+# Mintegral / Mobvista 广告 SDK
+# 覆盖 pok.mintegral.net、configure-tcp-ios.mintegral.net 等运行时请求
+DOMAIN-SUFFIX,mintegral.com
+DOMAIN-SUFFIX,mintegral.net
+DOMAIN-SUFFIX,mtgglobals.com
+DOMAIN-SUFFIX,rayjump.com
+DOMAIN-SUFFIX,mobvista.com
+
 DOMAIN,cnlogs.umeng.com
 DOMAIN,errlog.umeng.com
 DOMAIN,ucc.umeng.com

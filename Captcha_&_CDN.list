@@ -1,5 +1,5 @@
 # NAME: Global Infrastructure (验证码、防污染解析与通用基建)
-# UPDATED: 2026-04-26
+# UPDATED: 2026-08-21
 # 策略建议：必须绑定一个“延迟低、带宽大”的日常全能节点（如优质的香港/新加坡节点），【绝对禁止】绑定给你的 OKX/Binance 等专用交易节点！
 
 # ====== Part 1: DoH & DNS (底层防劫持解析) ======
@@ -31,7 +31,7 @@ DOMAIN-SUFFIX,fastly.net
 # 很多 App 如果连不上这些域名，前端页面会直接卡白屏，按键都加载不出来
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,fonts.googleapis.com
-DOMAIN-SUFFIX,fonts.gstatic.com
+# fonts.gstatic.com 已由 gstatic.com 覆盖
 DOMAIN-SUFFIX,cdnjs.cloudflare.com
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN-SUFFIX,unpkg.com

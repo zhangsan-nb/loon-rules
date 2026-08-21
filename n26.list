@@ -1,13 +1,12 @@
 # NAME: N26 (Europe/DE)
-# UPDATED: 2025-12-18
+# UPDATED: 2026-08-21
 # 策略：必须走 欧洲(EU) 原生住宅 IP (ISP)，严禁使用机房 IP
 # 警告：N26 对 IP 变动极度敏感，建议绑定固定 IP
 
 # ---- Core API (核心后端 - 极其重要) ----
 # N26 的 API 骨架，转账、余额全走这里
 DOMAIN-SUFFIX,tech26.de
-# 核心接口
-DOMAIN-SUFFIX,api.tech26.de
+# api.tech26.de、aisp.tech26.de、pisp.tech26.de 均由 tech26.de 覆盖
 
 # ---- Frontend & App (前端与交互) ----
 # 官网及部分新业务
@@ -16,7 +15,7 @@ DOMAIN-SUFFIX,n26.com
 DOMAIN-SUFFIX,number26.de
 
 # ---- Static & CDN (资源加载) ----
-DOMAIN-SUFFIX,cdn.n26.com
+# cdn.n26.com 已由 n26.com 覆盖
 DOMAIN-SUFFIX,static.n26.io
 # [新增] 经常用于加载卡片图片和营销图
 DOMAIN-SUFFIX,n26.imgix.net
