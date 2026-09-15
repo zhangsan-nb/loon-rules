@@ -1,5 +1,5 @@
 # NAME: Binance (Pro)
-# UPDATED: 2026-08-21
+# UPDATED: 2026-09-16
 # 策略建议：务必走“代理” (Proxy)，建议绑定 台湾(TW) 节点（支持合约且无政策封锁）
 
 # ---- Core Trading & Infrastructure (核心交易与基建) ----
@@ -23,6 +23,8 @@ DOMAIN-SUFFIX,binancezh.com
 DOMAIN-SUFFIX,binancezh.cc
 DOMAIN-SUFFIX,binancecnt.com
 DOMAIN-SUFFIX,binance.info
+# [新增] Bahrain 区域域名；覆盖 accounts.binance.bh 等子域
+DOMAIN-SUFFIX,binance.bh
 # [新增] 偶尔会有某些验证或活动页挂在这里
 DOMAIN-SUFFIX,binance.charity
 # 云服务相关
